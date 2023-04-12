@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+  </head>
+  <body class="bg-slate-300">
+    <main>
+      <div class="container mx-auto p-3">
+        <ul class="movies__list flex gap-10 flex-wrap justify-evenly"></ul>
+      </div>
+    </main>
+
+    <template class="movies__template">
+      <li
+        class="list__card border-2 border-yellow-400 px-2 py-1 rounded-lg max-w-xs"
+      >
+        <img
+          class="list__card-image rounded-lg mb-5"
+          src="https://picsum.photos/300/400"
+          alt="image"
+        />
+        <div
+          class="list__card-content bg-gray-400 rounded-lg pl-1 py-1 min-h-[132px] flex flex-col justify-around items-center"
+        >
+          <h3 class="list__card-title mb-5 text-2xl">Spider man no way home</h3>
+          <button
+            class="list__card-btn px-5 py-2 text-white rounded-xl bg-cyan-700 hover:bg-cyan-900 active:bg-cyan-950"
+          >
+            View
+          </button>
+        </div>
+      </li>
+    </template>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
